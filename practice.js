@@ -108,3 +108,39 @@
 
 ////////////// Tuna /////////////////
 
+// const sven = () => {
+//   const attempt = Math.random() * 3;
+//   let success;
+//   if(attempt < 1) {
+//     success = 'Sven hooked a tuna :)';
+//   } else {
+//     success = 'Sven came up empty handed :(';
+//   }
+//   return success;
+// };
+// const fishing = sven();
+// console.log(fishing);
+
+////////////// Fast Food /////////////////
+
+// const menu = {
+//   sandwich : '',
+//   side : '',
+//   drink : '',
+//   dessert : '',
+// };
+
+// const order = (sandwich, side, drink, dessert) => {
+//   menu.sandwich = sandwich;
+//   menu.side = side;
+//   menu.drink = drink;
+//   menu.dessert = dessert;
+//   return menu;
+// }
+
+// const bag = order('big mac', 'fries', 'coke', 'pie');
+// console.log(bag);
+
+////////////// Chores /////////////////
+
+
