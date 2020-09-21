@@ -142,5 +142,38 @@
 // console.log(bag);
 
 ////////////// Chores /////////////////
+const name = {
+  firstName: 'Donald',
+  lastName: 'McLelland',
+};
 
+const weekday = 'Tuesday';
 
+const laundry = (person) =>
+  `${person.firstName} ${person.lastName} did the laundry`;
+const cleaning = (person) =>
+  `${person.firstName} ${person.lastName} cleaned the house`;
+const mowLawn = (person) =>
+  `${person.firstName} ${person.lastName} mowed the lawn`;
+const dishes = (person) =>
+  `${person.firstName} ${person.lastName} did the dishes`;
+const groceryShopping = (person) =>
+  `${person.firstName} ${person.lastName} went grocery shopping`;
+const oilChange = (person) =>
+  `${person.firstName} ${person.lastName} changed the oil in their car`;
+
+const dayPlanner = (chore, person, day) => {
+  const activity = `${chore(person)} on ${day}.`;
+  return activity;
+};
+const lazyDay = dayPlanner(laundry, name, weekday);
+console.log(lazyDay);
+
+const busyDayPlanner = (chore1, chore2, chore3, person, day) => {
+  const activity = `On ${day}, ${chore1(person)}, and ${chore2(
+    person
+  )}, and ${chore3(person)}.`;
+  return activity;
+};
+const busyDay = busyDayPlanner(cleaning, mowLawn, dishes, name, weekday);
+console.log(busyDay);
